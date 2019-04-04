@@ -1,0 +1,64 @@
+intents:
+- greet
+- goodbye
+- thanks
+- deny
+- joke
+- name
+
+
+entities:
+- name
+
+
+slots:
+  name:
+    type: text
+
+
+actions:
+- utter_name
+- utter_thanks
+- utter_greet
+- utter_goodbye
+- action_joke
+- utter_login
+- utter_ticket
+- utter_aws
+- action_aws_instance_list
+- utter_status
+- utter_desc
+
+
+
+templates:
+  utter_name:
+  - text: "Hey there! Tell me your name."
+
+  utter_greet:
+  - text: "Hello, this is your chatbot assistant, how may I help?"
+
+  utter_goodbye:
+  - text: "Talk to you later!"
+  
+  utter_thanks:
+  - text: "My pleasure."
+  
+  utter_login:
+  - text: " Here are our suggested solutions for failed login:
+    Password Expired, Account Locked ,Please type one for detail walk through
+    If none of these matches your situation, please type raise a ticket."
+
+  utter_ticket:
+    - text: " A ticket has been raised under your name with description:
+    I couldn’t log into my work account, what should I do? "
+
+  utter_aws:
+  - text: "Sure, here is the list of your instance, please type the instance name to see the details"
+
+  utter_status:
+  - text: "Sure, which ticketing platform would you like to check: Service Now, JIRA"
+
+  utter_desc:
+  - text: " Here is the list of JIRA tickets related to you from last 2 weeks: CHATBOT1, CHATBOT2,RASA34 ,RASA45"
+
