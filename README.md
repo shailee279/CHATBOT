@@ -59,6 +59,8 @@ language: "en"
 
 pipeline: spacy_sklearn
 ```	
+This project was part of mywizard360 an Accenture Technology to create a chatbot that can be used for various use cases like querying about AWS instances etc. 
+Backend : Rasa 
 
 ### Files for Rasa Core model
 
