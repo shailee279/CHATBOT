@@ -39,26 +39,6 @@ python -m spacy download en
 ```
 
 
-## What’s in this starter-pack?
-
-This starter-pack contains some training data and the main files which you can use as the basis of your first custom assistant. It also has the usual file structure of the assistant built with Rasa Stack. This starter-pack consists of the following files:
-
-### Files for Rasa NLU model
-
-- **data/nlu_data.md** file contains training examples of six intents: 
-	- greet
-	- goodbye
-	- thanks
-	- deny
-	- joke
-	- name (examples of this intent contain an entity called 'name')
-	
-- **nlu_config.yml** file contains the configuration of the Rasa NLU pipeline:  
-```yaml
-language: "en"
-
-pipeline: spacy_sklearn
-```	
 This project was part of mywizard360 an Accenture Technology to create a chatbot that can be used for various use cases like querying about AWS instances etc. 
 Backend : Rasa 
 
